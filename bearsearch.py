@@ -2,8 +2,9 @@ from googlesearch import search
 from newspaper import Article
 from newspaper.article import ArticleException 
 import streamlit as st
+import nltk
 
-
+nltk.download('punkt')
 st.title("Bear Projects")
 
 def article_content(url):
